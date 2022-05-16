@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Scrollbar CSS*/
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 6px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #302f2b;
+}
+
+.form_connexion_inscription {
+    display: flex;
+    background-color: #ff902f;
+    flex-direction: column;
+    width: 350px;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+}
+
+
+.form_connexion_inscription .message_error {
+    color: red;
+    font-size: 14px;
+}
+
+.form_connexion_inscription  label {
+    margin: 2px 0;
+}
+
+.form_connexion_inscription input {
+    padding: 5px;
+    outline: 0;
+    border-radius: 6px;
+    border: 1px solid #302f2b;
+    background-color: #302f2b;
+    color: whitesmoke;
+}
+
+.form_connexion_inscription input[type='submit']{
+    margin-top: 20px;
+    background-color: #302f2b;
+    border: 1px solid #302f2b;
+    color: whitesmoke;
+}
+
+.form_connexion_inscription .link {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.link a {
+    color: whitesmoke;
+    font-size: 14px;
+    text-decoration: 0;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}
+
+/*Chat CSS*/
+.chat {
+    background-color: #ff902f;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+   
+}
+
+.button-email {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Deconnexion_btn {
+    padding: 5px 20px;
+    color: #fff;
+    background-color: #302f2b;
+    font-size: 13px;
+    text-decoration: 0;
+    border-radius: 6px;
+}
+
+#messages {
+    height: 360px;
+    min-width: 400px;
+    margin: 10px 0;
+    overflow: auto;
+    padding: 5px 10px;
+    border-top: 1px solid #302f2b;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+    scroll-snap-type: y mandatory;
+    
+}
+
+#messages > div:last-child {
+    scroll-snap-align: start;
+}
+
+.messages_box .message {
+   margin-bottom: 15px;
+   padding: 8px;
+   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+   width: 350px;
+  
+}
+
+.messages_box .message span {
+    font-weight: bold;
+    font-size: 14px;
+    
+}
+
+.messages_box p {
+    word-break: break-all;
+    font-size: 13px;  
+}
+
+.your_message {
+    border: 1px solid whitesmoke;
+    border-radius: 10px 10px 10px 0;
+    background-color: #302f2b;
+    color: whitesmoke;  
+}
+
+.your_message span {
+    color: whitesmoke;
+
+}
+
+.others_message {
+    border: 1px solid #302f2b;
+    margin-left: auto;
+    border-radius: 10px 10px 0 10px;
+}
+
+.others_message span {
+    color: #333;
+}
+
+.date {
+    color: #ccc;
+}
+
+.send_message {
+    border-top: 1px solid #302f2b;
+    display: flex;
+    flex-direction: column;
+    padding: 10px
+}
+
+.send_message textarea {
+    width: 100%;
+    resize: none;
+    border-radius: 6px;
+    outline: 0;
+    padding: 5px;
+   font-size: 13px;
+   background-color: #302f2b;
+   color: white;
+}
+
+.send_message input[type='submit']{
+    width: 100%;
+    padding: 5px 0;
+    margin-top: 10px;
+    border-radius: 6px;
+    background-color:#302f2b ;
+    color: #fff;
+    font-size: 13px;
+    border: 1px solid #302f2b;
+    cursor: pointer;
+}
+
+.message_inscription {
+    padding: 10px 0;
+    margin: 5px 0;
+    text-align: center;
+    background-color: green;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 6px;
+}
+
+h1{
+    color: whitesmoke;
+    font-size: xx-large;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.accueil{
+    color: whitesmoke;
+    margin-bottom: 35px;
+    text-align: center;
+    width: 80%;
+}
+
+#channelSelect{
+    background-color: #302f2b;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    height: 30px;
+}
+
+.troll{
+    padding: 5px 20px;
+    color: #fff;
+    background-color: #302f2b;
+    font-size: 13px;
+    text-decoration: 0;
+    border-radius: 6px;
+}
+
+img{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
