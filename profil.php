@@ -1,7 +1,6 @@
 <?php 
-require "connexion_bdd.php";
 session_start();
-
+require "connexion_bdd.php";
 //////////// requete de recuperation du profil si id en db  egal a l'id en session \\\\\\\\\\\
 
     $user = $_SESSION['user'];

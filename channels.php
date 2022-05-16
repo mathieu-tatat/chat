@@ -1,6 +1,6 @@
 <?php 
-require "connexion_bdd.php";
 session_start();
+require "connexion_bdd.php";
 //////////// requete de recuperation de tout les canaux de chat\\\\\\\\\\\
 
 $req = $con->prepare("SELECT * FROM `canaux`");

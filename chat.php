@@ -1,7 +1,7 @@
 <?php 
-require "connexion_bdd.php";
   //démarer la session
   session_start();
+  require "connexion_bdd.php";
   if(!isset($_SESSION['user'])){
       // si l'utilisateur n'est pas connecté
      // redirection vers la page de connexion
