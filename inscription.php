@@ -11,7 +11,7 @@
     <title>Connexion | Chat</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-    
+    <script src="messages.js"></script>
 </head>
 
 <body>

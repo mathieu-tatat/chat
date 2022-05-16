@@ -61,16 +61,8 @@ $result = $req->fetchAll(PDO::FETCH_ASSOC);
             <!-- ////////// redirection vers profil \\\\\\\\\\\\\\\ -->
 
     <form action="" method="POST" class="form_connexion_inscription" style="margin-bottom: 40px;">
-    <input type="submit" value="accés profil" name="profil">
+        <input type="submit" value="accés profil" name="profil">
     </form>
-
-
-    <script>
-
-
-
-
-    </script>
 
 </body>
 </html>

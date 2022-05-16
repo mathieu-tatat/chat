@@ -30,6 +30,7 @@ require "connexion_bdd.php";
     <title> <?=$user['pseudo']?> | CHAT</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script src="messages.js"></script>
 </head>
 <body>
     
