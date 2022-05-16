@@ -5,7 +5,7 @@ require "connexion_bdd.php";
   if(!isset($_SESSION['user'])){
       // si l'utilisateur n'est pas connecté
      // redirection vers la page de connexion
-     header("location:index.php");
+     header("Location:index.php");
   }
   $pseudo = $_SESSION['user']['pseudo']; // pseudo de l'utilisateur
   $channelId = $_SESSION['channel'];// id du cannal
@@ -31,6 +31,7 @@ require "connexion_bdd.php";
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <script src="messages.js"></script>
+    <link rel="icon" href="favicon.png" sizes="16x16" type="image/png">
 </head>
 <body>
     

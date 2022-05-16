@@ -39,6 +39,7 @@ $result = $req->fetchAll(PDO::FETCH_ASSOC);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>admin</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png" sizes="16x16" type="image/png">
 </head>
 <body>
    

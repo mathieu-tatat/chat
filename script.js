@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", (event) => {
    
 
@@ -6,7 +5,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
       //Vérifions si le mot de passe et la confirmation sont conformes
       var mdp1 = document.querySelector('.mdp1');
       var mdp2 = document.querySelector('.mdp2');
-      var password = document.querySelector('.password');
       var password2 = document.querySelector('.password2');
       var password3 = document.querySelector('.password3');
       mdp2.addEventListener('keyup',function(){

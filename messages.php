@@ -12,7 +12,7 @@
                $res = $req->fetch(PDO::FETCH_ASSOC);
             
             
-               if($req->rowCount() <= 0){
+               if($req->rowCount() < 0){
                    // s'il n'y a pas encore de message
                    echo "Messagerie vide";
                }else {

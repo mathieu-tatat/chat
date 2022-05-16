@@ -53,6 +53,7 @@ if(isset($_POST['setInfo'])){
     <script src="script.js"></script>
     <script src="script2.js"></script>
     <script src="messages.js"></script>
+    <link rel="icon" href="favicon.png" sizes="16x16" type="image/png">
 </head>
 <body>
     <h1>Little discord espace profil</h1>

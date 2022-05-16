@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <script src="messages.js"></script>
+    <link rel="icon" href="favicon.png" sizes="16x16" type="image/png">
 </head>
 <body>
     <?php 
@@ -59,6 +60,7 @@
                echo $_SESSION['message'] ;
            }
         ?>
+        
         <p class="message_error">
             <?php 
                //affichons l'erreur
@@ -68,6 +70,7 @@
 
             ?>
         </p>
+
         <label>Pseudo:</label>
         <input type="text" name="pseudo" placeholder="Entrer votre pseudo...">
         <label>Adresse Mail:</label>
