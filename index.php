@@ -36,7 +36,7 @@
                    //Création d'une session qui contient l'email
                    $_SESSION['user'] = $user ;
                    //redirection vesr la page chat
-                    header("location:channels.php");
+                    header("Location:channels.php");
                    // detruire la variable du message d'inscription
                    unset($_SESSION['message']);
                }else {

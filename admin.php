@@ -20,7 +20,7 @@ $result = $req->fetchAll(PDO::FETCH_ASSOC);
         //on actualise la page
             if($requete){
             $_SESSION['message'] = "<p class='message_inscription'>le chat a été créer avec succès !</p>" ;
-            header('location:admin.php');
+            header('Location:admin.php');
             };
         }
         else {
@@ -34,7 +34,7 @@ $result = $req->fetchAll(PDO::FETCH_ASSOC);
         $modif = $_POST['modif'];
         $sql = $con->prepare("DELETE FROM `canaux` WHERE `canaux`.`canal` = '$modif'");
         $sql->execute();
-        header('location:admin.php');
+        header('Location:admin.php');
         echo "channel supprimé";
         
     }

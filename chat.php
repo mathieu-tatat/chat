@@ -75,10 +75,10 @@ require "connexion_bdd.php";
                             $req->execute();
                     
                         //on actualise la page
-                        header('location:chat.php');
+                        header('Location:chat.php');
                     }else {
                         // si le message est vide , on actualise la page
-                        header('location:chat.php');
+                        header('Location:chat.php');
                     }
                     
                 }
