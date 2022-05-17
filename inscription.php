@@ -16,6 +16,9 @@
 </head>
 
 <body>
+    <header>
+        <h1>Bienvenue sur little discord</h1>
+    </header>
      <?php
       
         if(isset($_POST['button_inscription'])){
@@ -66,7 +69,7 @@
            }
         }
      ?>
-    <h1>Bienvenue sur little discord</h1>
+
       <form action="" method="POST" class="form_connexion_inscription" >
         <h2>INSCRIPTION</h2>
         

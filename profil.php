@@ -55,7 +55,9 @@ if(isset($_POST['setInfo'])){
     <link rel="icon" href="favicon.png" sizes="16x16" type="image/png">
 </head>
 <body>
-    <h1>Little discord espace profil</h1>
+    <header>
+        <h1>Little discord espace profil</h1>
+    </header>
 
   <!-- formulaire pour modifier ses infos -->
 

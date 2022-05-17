@@ -58,8 +58,10 @@ $result = $req->fetchAll(PDO::FETCH_ASSOC);
     <link rel="icon" href="favicon.png" sizes="16x16" type="image/png">
 </head>
 <body>
-   
-    <h1>Little discord espace Administration</h1>
+    
+    <header>
+        <h1>Little discord espace Administration</h1>
+    </header>
 
 
 <!-- ////////// formulaire de creation de channel\\\\\\\\\\\\\\\ -->
@@ -104,7 +106,7 @@ $result = $req->fetchAll(PDO::FETCH_ASSOC);
     <?php }else{ ?>
 
     
-            <img style="display: flex;justify-content: center;margin: auto;"src="troll.gif" >
+            <img style="display: flex;justify-content: center;margin: auto;width:70%;"src="troll.gif" >
             <h2 style="display: flex;justify-content: center;margin: auto;">Accés refusé</h2>
             <a style= "padding: 5px 20px; color: #fff; background-color: #302f2b; font-size: 13px; text-decoration: 0; border-radius 6px;  display: flex; justify-content: center; width:5%; margin: auto;"  href="index.php">accueil</a>
         

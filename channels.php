@@ -42,8 +42,9 @@ $result = $req->fetchAll(PDO::FETCH_ASSOC);
     <link rel="icon" href="favicon.png" sizes="16x16" type="image/png">
 </head>
 <body>
-   
-    <h1>Little discord choix de channel</h1>
+    <header>
+        <h1>Little discord choix de channel</h1>
+    </header>
 
         <!-- ////////// formulaire de choix de channel\\\\\\\\\\\\\\\ -->
 
@@ -51,7 +52,7 @@ $result = $req->fetchAll(PDO::FETCH_ASSOC);
         <h2>choisissez votre channel</h2>
         <label>Nom du canal : </label>
             <select name="choose" id="channelSelect">
-                <option value="">--choisir un channel--</option>
+                
                 <?php foreach ($result as $canal){ ?>
                 <option value="<?= $canal['id_c'] ?>"><?= $canal['canal'] ?></option>
                 <?php } ;?>

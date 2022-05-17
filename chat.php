@@ -34,8 +34,10 @@
     <link rel="icon" href="favicon.png" sizes="16x16" type="image/png">
 </head>
 <body>
-    
-<h1>little discord</h1>
+    <header>
+        <h1>little discord</h1>
+    </header>
+
 
     <div class="chat">
         <div class="button-email">
@@ -65,15 +67,22 @@
                 <?php 
                 //envoi des messages
                 if(isset($_POST['send'])){
+
                     // recuperons le message
                     $message = $_POST['message']; 
+                    
                     //connexion à la base de donnée
                     include("connexion_bdd.php");
                     //verifions si le champs n'est pas vide
                     if(isset($message) && $message != ""){
                         //inserer le message dans la base de données
-                            $req = $con->prepare("INSERT INTO messages VALUES (NULL,'$pseudo','$message','$channelId',$userId,NOW())");
-                            $req->execute();
+                            $req = $con->prepare("INSERT INTO messages (`pseudo`, `msg`, `id_channel`, `id_user`, `date`) VALUES (:pseudo, :message, :channelId, :userId, NOW())");
+                            $req->execute([
+                                "pseudo" => $pseudo,
+                                "message" => $message,
+                                "channelId" => $channelId,
+                                "userId" => $userId
+                            ]);
                     
                         //on actualise la page
                         header('Location:chat.php');

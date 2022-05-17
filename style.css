@@ -104,7 +104,7 @@ body {
 
 #messages {
     height: 360px;
-    min-width: 400px;
+    min-width: 360px;
     margin: 10px 0;
     overflow: auto;
     padding: 5px 10px;
@@ -238,7 +238,7 @@ h1{
 }
 
 img{
-    width: 10%;
+    
     display: flex;
     justify-content: center;
     margin: auto;

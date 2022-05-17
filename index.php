@@ -15,7 +15,11 @@
     <script src="script.js"></script>
     <link rel="icon" href="favicon.png" sizes="16x16" type="image/png">
 </head>
+
 <body>
+    <header>
+        <h1>Bienvenue sur little discord</h1>
+    </header>
     <?php 
        if(isset($_POST['button_con'])){
            //si le formulaire est envoyé
@@ -48,39 +52,40 @@
                //si les champs sont vides
                $error = "Veuillez remplir tous les champs !" ;
            }
+           
        }
     ?>
-    <h1>Bienvenue sur little discord</h1>
+    
     <p class="accueil">Sur cette plateforme vous aurez accés à differents canaux de chat dans lesquels vous pourrez dialoguer en oute liberté</p>
-    <form action=""  method="POST" class="form_connexion_inscription">
-        <h2>CONNEXION</h2>
-        <?php
-           //affichons le message qui dit qu'un compte a été créer
-           if(isset($_SESSION['message'])){
-               echo $_SESSION['message'] ;
-           }
-        ?>
         
-        <p class="message_error">
-            <?php 
-               //affichons l'erreur
-               if(isset($error)){
-                   echo $error ;
-               }
+        <form action=""  method="POST" class="form_connexion_inscription">
+            <h2>CONNEXION</h2>
 
+            <?php
+            //affichons le message qui dit qu'un compte a été créer
+            if(isset($_SESSION['message'])){
+                echo $_SESSION['message'] ;
+            }
             ?>
-        </p>
+            
+            <p class="message_error">
+                <?php 
+                //affichons l'erreur
+                if(isset($error)){
+                    echo $error ;
+                }?>
+            </p>
 
-        <label>Pseudo:</label>
-        <input type="text" name="pseudo" placeholder="Entrer votre pseudo...">
-        <label>Adresse Mail:</label>
-        <input type="email" name="email" placeholder="Entrer votre email...">
-        <label>Mots de passe:</label>
-        <input type="password" name="mdp1" placeholder="Entrer votre mot de passe...">
-        <input type="submit" value="Connexion" name="button_con">
-        <p class="link">Vous n'avez pas de compte ? <a href="inscription.php">Créer un compte</a></p> 
-        <a href="https://github.com/mathieu-tatat/chat"><img src="logoGithub.svg" alt=""></a>
-    </form>
+            <label>Pseudo:</label>
+            <input type="text" name="pseudo" placeholder="Entrer votre pseudo...">
+            <label>Adresse Mail:</label>
+            <input type="email" name="email" placeholder="Entrer votre email...">
+            <label>Mots de passe:</label>
+            <input type="password" name="mdp1" placeholder="Entrer votre mot de passe...">
+            <input type="submit" value="Connexion" name="button_con">
+            <p class="link">Vous n'avez pas de compte ? <a href="inscription.php">Créer un compte</a></p> 
+            <a href="https://github.com/mathieu-tatat/chat"><img src="logoGithub.svg" alt=""></a>
+        </form>
   
 </body>
 </html>
